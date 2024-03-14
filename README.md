@@ -34,6 +34,8 @@ There are different approaches to solving this problem.In particular, I would li
 
 One of the defined operations in Geopandas is "within" ,through which we can validate if a GPS point is located within a polygon (the polygon must be loaded beforehand). After performing this spatial join operation, we can exclude data that does not meet the specified condition.
 
+On the following image, we can see the results obtained after performing the spatial join operation. As a result, the incorrect bus trips have been removed from the dataset.
+
 ![](https://github.com/fcabrerag/pro_investigacion/blob/main/imagenes/Rows_GPS_20180803.png)
 
 
