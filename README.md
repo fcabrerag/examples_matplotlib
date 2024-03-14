@@ -25,9 +25,8 @@ Contabilización de casos para dos períodos de tiempo determinados (meses de Ju
 El lenguaje de programación utilizado es Python. Para el tratamiento de datos es usada la librería pandas y en la visualización de resultados la librería Seaborn.
 
 ## 2.- Data cleaning and processing of missing data:
-### Location Validation in GPS Bus Data:
+### 2.1 Location Validation in GPS Bus Data:
 
-### Validating Locations in Bus Trips Data:
 How can I validate a location on a bus trip? Consider that I have a dataset with GPS bus data, and I would like to determine if certain conditions defined by my initial problem are met.
 For example, determining if any trip occurs within the predefined geographical area stated in the problem statement or if a GPS coordinate point falls within the boundaries of a city or country.
 
@@ -35,7 +34,7 @@ There are different approaches to solving this problem.In particular, I would li
 
 One of the defined operations in Geopandas is "within" ,through which we can validate if a GPS point is located within a polygon (the polygon must be loaded beforehand). After performing this spatial join operation, we can exclude data that does not meet the specified condition.
 
-![](https://github.com/fcabrerag/pro_investigacion/blob/main/imagenes/filtro_datos.png)
+![](https://github.com/fcabrerag/pro_investigacion/blob/main/imagenes/Rows_GPS_20180803.png)
 
 
 ### 2.2.- Interpolación lineal de datos faltantes:
