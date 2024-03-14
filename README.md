@@ -39,7 +39,8 @@ On the following image, we can see the results obtained after performing the spa
 ![](https://github.com/fcabrerag/pro_investigacion/blob/main/imagenes/Rows_GPS_20180803.png)
 
 
-### 2.2.- Interpolación lineal de datos faltantes:
+### 2.2.- Linear interpolation of missing data:
+
 The data sampling does not have the same regularity interval for all bus trips. There are times when data values have intervals exceeding 30 seconds (which is the defined time interval between each GPS row). An algorithm was applied to generate new GPS data rows with the correct regular interval. The new latitude and longitude variables were completed using linear interpolation, which calculates intermediate values between two data points with minimal error. The following image shows a comparison between the initial condition and the condition after being corrected by the algorithm.
 
 ![](https://github.com/fcabrerag/pro_investigacion/blob/main/imagenes/fig_3.2.png)
