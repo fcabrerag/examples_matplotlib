@@ -40,7 +40,7 @@ On the following image, we can see the results obtained after performing the spa
 
 
 ### 2.2.- Interpolación lineal de datos faltantes:
-El muestreo de datos GPS no ha sido capturado con la misma regularidad para todos los viajes de bus, encontrando tiempos con valores superiores a 30 segundos (que es el tiempo de muestreo definido entre cada registro de GPS).Es aplicado un algoritmo encargado de generar nuevos registros de fechas de muestreo GPS con la regularidad correcta. Las variables de latitud y longitud nuevas son completadas a través de la interpolación lineal, que calcula los valores intermedios entre dos puntos con un pequeño error. La figura realiza una comparativa antes y posterior a la regularización del viaje. Los datos corresponden a un día deJulio de 2018 para un viaje de bus (entre las 12:10 y 12:14 horas).
+The data sampling does not have the same regularity interval for all bus trips. There are times when data values have intervals exceeding 30 seconds (which is the defined time interval between each GPS row). An algorithm was applied to generate new GPS data rows with the correct regular interval. The new latitude and longitude variables were completed using linear interpolation, which calculates intermediate values between two data points with minimal error. The following image shows a comparison between the initial condition and the condition after being corrected by the algorithm.
 
 ![](https://github.com/fcabrerag/pro_investigacion/blob/main/imagenes/fig_3.2.png)
 
