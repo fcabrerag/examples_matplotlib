@@ -24,10 +24,17 @@ Contabilización de casos para dos períodos de tiempo determinados (meses de Ju
 
 El lenguaje de programación utilizado es Python. Para el tratamiento de datos es usada la librería pandas y en la visualización de resultados la librería Seaborn.
 
-## 2.- Limpieza y tratamiento de datos faltantes:
-### 2.1.- Limpieza de datos:
-Se busca visualizar todos los viajes de los buses usando las variables de longitud y latitud. La finalidad es encontrar los límites a nivel de coordenadas, localizando posibles viajes de buses que circularon por lugares distintos a su ruta. El gráfico escogido para este propósito es un
-scatterplot. El eje X de coordenadas representa la longitud y el eje Y de coordenadas representa la latitud. Son detectados viajes de buses que describen rutas que se escapan del rango de valores aceptados como válidos y que deben ser eliminados con la finalidad de homogeneizar los viajes del servicio de bus.En la figura se muestra la aplicación de un filtro de eliminación de registros de viajes para un grupo de buses que su ruta que sobrepasa su límite de longitud (valores superiores a -70.64)
+## 2.- Data cleaning and processing of missing data:
+### Location Validation in GPS Bus Data:
+
+### Validating Locations in Bus Trips Data:
+How can I validate a location on a bus trip? Consider that I have a dataset with GPS bus data, and I would like to determine if certain conditions defined by my initial problem are met.
+For example, determining if any trip occurs within the predefined geographical area stated in the problem statement or if a GPS coordinate point falls within the boundaries of a city or country.
+
+There are different approaches to solving this problem.In particular, I would like to share a specific solution using the Geopandas library in Python.
+
+One of the defined operations in Geopandas is "within" ,through which we can validate if a GPS point is located within a polygon (the polygon must be loaded beforehand). After performing this spatial join operation, we can exclude data that does not meet the specified condition.
+
 ![](https://github.com/fcabrerag/pro_investigacion/blob/main/imagenes/filtro_datos.png)
 
 
