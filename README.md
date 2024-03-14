@@ -45,7 +45,7 @@ The data sampling does not have the same regularity interval for all bus trips. 
 
 ![](https://github.com/fcabrerag/pro_investigacion/blob/main/imagenes/data_interpolation.png)
 
-El lenguaje de programación utilizado es Python. Para el tratamiento de datos es usada la librería pandas y en la visualización de resultados la librería Matplotlib.
+The programming language used is Python. The Pandas library is used for data processing and the Matplotlib library is used to display results.
 
 ## 3.- Visualización de predicciones de una red neuronal LSTM:
 Posterior a la construcción de una red neuronal LSTM (de arquitectura Many-to-One),a través de loops se generan predicciones de los viajes de un bus, en un intervalo de una hora, para los días que fueron seleccionados como el conjunto de test del dataset. Estas predicciones se guardan en archivos de textos , los cuales son leídos a través de un script en Python que se encarga de cargar estos datos y generar las imágenes las cuales son guardadas en un directorio especifico(es un proceso masivo). En la figura se muestran las predicciones para un día puntual en un intervalo de una hora, comparando las predicciones de la red (imagen izquierda) contra los datos reales(imagen derecha).
